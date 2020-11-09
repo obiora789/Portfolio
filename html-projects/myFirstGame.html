@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+        <title>MyFirstGame</title>
+        <link rel="shortcut icon" type="image/png" href="../images/Obi.png"/>
+        <link rel="stylesheet" type = "text/css" href = "../styles/myFirstGame.css"/>
+        <script type="text/javascript" src= "../scripts/myFirstGame1.js"></script>
+    </head>
+    <body>
+        
+        <div class="score-board">
+            <p id="score"></p>
+        </div>
+        <div id="interface">
+            <div id="titleBar">
+                <h1>NUMBER GUESS</h1>
+            </div>
+            <button type="button" class="mute" onclick = "audioMute();">Mute</button>
+            <form action="">
+                <fieldset>
+                    <p class="chooseNo">Choose a number between 1 and 10 below:</p>
+                    <p><input type="number" id="inputNo" min="1" max="10" maxlength="3" placeholder="Input Number"/></p>
+                    <p><button type="button" id= "submit" onclick ="checkResult();">Submit Guess</button></p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="outputPnl"><p class="div">Watch this Space!</p></div>
+        <button type="button" id="restart" onclick="restart();">Restart Game</button>
+        <footer>
+            <p class="footer">Powered by <a class="link" href="#">Obiora</a></p>
+        </footer>
+    </body>
+</html>

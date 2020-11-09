@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en-US" dir="ltr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+            <title>Application Form</title>
+            <link href="../styles/sign-up.css" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+            <h2>Application to date my daughter</h2>
+            <form action="notqualified.html" method="POST">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <!--code for surname (take note of the patterns)--> 
+                    <label class="name surname" for="surname">Surname:</label>
+                    <input type="text" required="true" spellcheck="true" id="surname" name="sname" placeholder="Enter your Surname" title="Input Surname" minlength="3" maxlength="15"><p></p>
+                    <!--code for Other names (take note of the patterns)--> 
+                    <label class="name othernames" for="names">Other Names:</label>
+                    <input id="names" type="text" name="onames" spellcheck="true" autocomplete="on" placeholder="Enter your Other Names" required="true" title="Input your First and Middle Names" minlength="12" maxlength="30"><p></p>
+                    <!--code for address (take note of the patterns)--> 
+                    <label class="residence" for="address">Contact Address:</label>
+                    <input id="address"type="text" name="caddress" minlength="10" maxlength="50" autocomplete="on" placeholder="Enter your Address here" required="" title="Input your Residential Address"><p></p>
+                    <!--code for Zipcode (take note of the patterns)--> 
+                    <label class="pcode" for="zip">Zip Postal Code:</label>
+                    <input id="zip" name="Zipcode" type="text" minlength="5" maxlength="6" size="6" required="true" pattern="^\d{5,6}$" autocomplete="on" placeholder="Enter Zip Here" title="Input your ZIP code">
+                    <!-- Country code (take note of the patterns)--> 
+                    <label class="country" for="ccode">Country:</label>
+                    <input id="ccode" name="country" type="text" required="true" pattern="[A-Za-z]{3}" minlength="3" size="3" maxlength="3" autocomplete="on" placeholder="Enter Country Code" title="Input Country Code"><p></p>
+                    <!--code for Email (take note of the patterns)--> 
+                    <label class="e-mail" for="email">E-Mail Address:</label>
+                    <input id="email" type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="10" maxlength="30" placeholder="Enter your Email Address" required="true" autocomplete="off" title="Input your Email Address"><p></p>
+                    <!--code for Mobile (take note of the patterns)--> 
+                    <label class="mobile" for="mobileno">Mobile Number:</label>
+                    +<input type="tel" name="gsm" minlength="3" maxlength="3" required="true" pattern="\d{3}$" size="3" placeholder="###" title="Input GSM No.">
+                    <input type="tel" name="gsm" minlength="3" maxlength="3" required="true" pattern="\d{3}$" size="3" placeholder="###" title="Input GSM No.">
+                    <input type="tel" name="gsm" minlength="7" maxlength="7" required="true" pattern="\d{7}$" size="7" placeholder="####" title="Input GSM No.">
+                    <p></p>
+                    
+                    <label class="outingdate" for="outing">Date of Proposed Outing:</label>
+                    <input id="outing" type="date" name="odate" required="true" title="Input Date of Outing"><p></p>
+                    
+                    <label class="quotient" for="IQ">Intelligence Quotient:</label>
+                    <input id="IQ" type="number" name="IQ" required="true" minlength="3" maxlength="3" min="50" max="160" pattern="\d{3}$" title="Enter Intelligence quotient" placeholder="Enter IQ here"><p></p>
+                    
+                    <label class="gender" for="gender">Gender:</label>
+                    <input name="gender" id="male" type="radio" value="Male" checked="checked" title="Select Gender"><label for="male">Male</label><br>
+                    <input name="gender" id="female" type="radio" value="Female" title="Select Gender"><label for="female">Female</label><br>
+                    <input name="gender" id="other" type="radio" value="Other" title="Select Gender"><label for="other">Other</label><p></p>
+                    <label class="about" for="description">Why do you want to date my daughter?</label><br>
+                    <textarea id="description" rows="5" cols="50" name="intention" minlength="100" maxlength="250" spellcheck="true" placeholder="State your intentions here." title="Describe yourself too!! You have the space."></textarea><p></p>
+                </fieldset>
+                
+                <fieldset>
+                    <label class="checkall">Check all that Apply.</label>
+                    <input type="checkbox" name="Tattoos" id="tattoo" value="Tattoos" title="Check those that best describes you"> <label for="tattoo">I have one or more Tattoos.</label><br>
+                    <input type="checkbox" name="Piercings" id="piercing" value="Piercings" title="Check those that best describes you"> <label for="piercing">I have one or more Piercings.</label><br>
+                    <input type="checkbox" name="Old" id="age" value="Old" title="Check those that best describes you">  <label for="age">I'm 5 years older than your daughter.</label><br>
+                    <input type="checkbox" name="Iwork" id="work" value="Iwork" title="Check those that best describes you">  <label for="work">I work full-time.</label><br>
+                    <input type="checkbox" name="rich" id="richparents" value="rich" title="Check those that best describes you"> <label for="richparents">My Parents are rich.</label><br><p></p>
+                    <label class="love" for="lrange">How much do you love my daughter?</label><br>
+                    <span>Limited</span>
+                    <input name="lamount" id="lrange" type="range" min="0" max="100" step="13" title="It must get to Excessive to gain my attention.">
+                    <span>Excessive</span>
+                    <p></p>
+                </fieldset>
+                <fieldset>
+                    <label class="select" for="politics">Political Affiliation:</label>
+                    <select id="politics" name="Politics">
+                        <option value="None">None</option>
+                        <option value="APC">APC</option>
+                        <option value="PDP">PDP</option>
+                        <option value="Biafra">Biafra</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Other">Other</option>
+                    </select><p></p>
+                    <label class="datalist" for="qualification">Level of Education:</label>
+                    <input list="education" name="qualification" id="qualification" type="text" placeholder="Enter Qualification here" title="Select/Enter Eduactional Level">
+                    <datalist id="education">
+                        <option value="Kindergarten">Kindergarten</option>
+                        <option value="Primary">Basic Education</option>
+                        <option value="Secondary">Secondary Education</option>
+                        <option value="University">Bachelors Degree</option>
+                        <option value="Polytechnic">HND/OND</option>
+                        <option value="Masters">Masters Degree</option>
+                        <option value="Doctorate">Doctorate Degree</option>
+                        <option value="Business">Business</option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <p>Attach Police Clearance Certificate and Medical Certificates here:<button type="button">Attach</button></p>
+                </fieldset>
+                <div class="subutton">
+                    <button type="submit" id="submit">Send Your Application</button>
+                </div>
+            </form>
+        </body>
+    </html>

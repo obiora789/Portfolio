@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoCZOIHTWEBlw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Philosopher Regular'), local('Philosopher-Regular'), url(https://fonts.gstatic.com/s/philosopher/v12/vEFV2_5QCwIS4_Dhez5jcWBuT0020Nqf.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.PIC001 {
+    background-image: url('../images/IMG 001.jpg');
+}
+
+.IMG{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.PIC002 {
+    background-image: url("../images/IMG 002.jpg");
+}
+
+.PIC003 {
+    background-image: url("../images/IMG 003.jpg");
+}
+
+.PIC004 {
+    background-image: url("../images/IMG 004.jpg");
+}
+
+.PIC005 {
+    background-image: url("../images/IMG 005.jpg");
+}
+
+.head, .text{
+    position: relative;
+    left: 515px;
+    top: 220px;
+    background-color: #262626;
+    width: 255px;
+    border-radius: 0.4em;
+}
+
+.head,.text span {
+    font-family: Satisfy, fantasy;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    z-index: 10;
+    color: #e5e5e5;
+}
+
+.text {
+    border-radius: 1.1em;
+}
+
+.head,.text span:hover {
+    color: #FFF;
+}
+
+section {
+    width: 100%;
+    height: 300px;
+    background-color: #514439;
+    font-family: Philosopher, fantasy;
+    overflow: scroll;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+section:hover {
+  color: #FFF;
+}
+
+section h2 {
+    font-size: 25px;
+}
+
+section p {
+  font-size: 16px;
+}
