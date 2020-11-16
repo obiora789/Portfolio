@@ -8,7 +8,7 @@ body{
 }
 #nav-left {
     text-decoration: none;
-    left: 1.3em;
+    left: 1.7em;
     color: #000;
     font-family: "Times New Roman", serif;
     font-size: 1em;
@@ -39,7 +39,7 @@ body{
     left: 60%;
     color: black;
     font-family: "Times New Roman", serif;
-    font-size: 15px;
+    font-size: 1em;
     bottom: 4px;
     padding: 0.9em;
     border-radius: 0.5em;
@@ -56,10 +56,11 @@ body{
     top: 3em;
     width:99%;
     max-width: 100%;
+    box-shadow: 0 0.05em 0 #DFDFDF;
 }
 .hamburger img {
     width: 100%;
-    height: 40em;
+    min-height: 70%;
     margin-left: 1.5em;
     max-width: 100%;
     border-radius: 0.5em;
@@ -76,7 +77,7 @@ h1,h4,h5 {
 .hamburger h1 {
     z-index:1;
     color: gray;
-    bottom: 3.3em;
+    bottom: 2.3em;
     position: relative;
     left: 1.2em;
     cursor: default;
@@ -110,19 +111,19 @@ h1,h4,h5 {
 #imgtoast {
     width: 33em;
     height: 40em;
-    border-radius: 5px;
+    border-radius: 0.5em;
 }
 
 #imgtable {
     width: 33em;
     height: 45em;
-    border-radius: 0.5em;
+    border-radius: 5px;
     padding-top: 1em;
 }
 
 .container-text, .container2-text {
     line-height: 1.8em;
-    font-size: 1.1em;
+    font-size: 1em;
     width: 40%;
     height: 91%;
 }
@@ -140,7 +141,7 @@ h1,h4,h5 {
 }
 
 .inner-p {
-    font-size:1.1em;
+    font-size: 1.1em;
     color: #7F7F7F;
 }
 
@@ -155,7 +156,7 @@ h1,h4,h5 {
 
 .container2-img {
     left: 54%;
-    bottom: 760px;
+    bottom: 95%;
     position: relative;
     width: 40%;
     height: 750px;
@@ -237,8 +238,9 @@ footer {
     width: 100%;
     height: 3.1em;
     background-color: #efefef;
-    padding: 3% 1.3% 3% 0.65%;
+    padding: 3% 2.5% 3% 0.65%;
     max-width: 100%;
+    margin-left: -0.5%;
 }
 
 .link {
