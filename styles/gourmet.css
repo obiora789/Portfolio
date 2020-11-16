@@ -189,6 +189,7 @@ span {
     border: none;
     box-shadow: 0 1px #DFDFDF;
     left: 3%;
+    outline:  none;
 }
 
 .button {
@@ -201,6 +202,7 @@ span {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 3%;
+    outline: none;
 }
 
 .button:hover {
