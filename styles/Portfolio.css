@@ -14,6 +14,46 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+*{
+  box-sizing: border-box;
+}
+ /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
 html {
     background-color: #333;
     width: 100%;
@@ -48,6 +88,28 @@ header{
     width: 100%;
 }
 
+@media screen and (max-width:650px){
+  .container div{
+    font-size: 70%;
+  }
+  .portfolio a, .survey a {
+    font-size: 68%;
+  }
+  #home img{
+    height: 80%;
+  }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px){
+.container div{
+    font-size: 90%;
+  }
+  .portfolio a, .survey a {
+    font-size: 88%;
+    padding: 20em 0;
+  }
+}
+
 .container div a:hover {
     background-color: #0B4F00;
     color: #e5e5e5;
@@ -77,9 +139,10 @@ header{
     left: 1%;
 }
 
+
 .contact {
     position: relative;
-    left: 3%;
+    left: 1%;
 }
 
 .survey {
@@ -89,21 +152,21 @@ header{
 
 #home {
     background-color: #560048;
-    width: 95em;
+    width: 100%;
     padding: 11em 0.6em;
     color: #FFF6B7;
-    margin-left: -0.2em;
-    max-width: 99%;
+    max-width: 100%;
+    height: 45em;
 }
 
 #home img{
-    position: relative;
-    width: 20em;
-    height: 14em;
+    position: absolute;
+    width: 28%;
+    height: 16em;
     border-radius: 50%;
-    left: 30em;
-    bottom: 1em;
-    z-index: 1;
+    left: 36%;
+    z-index: 3;
+    bottom: 44%;
 }
 .home2  {
     position:  relative;
@@ -113,8 +176,8 @@ header{
 }
 
 #about {
-    max-width: 95%;
-    padding: 7em 2em;
+    max-width: 98%;
+    padding: 1em 2em 4em 2em;
 }
 
 div p {
@@ -126,6 +189,7 @@ div p {
 }
 .intro{
   text-align: center;
+  margin-top: 10em;
   font-size: 26px;
   font-family: "Berkshire Swash", fantasy;
 }
@@ -141,11 +205,14 @@ strong {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 1.1em;
     padding: 0em 2em ;
-    max-width: 95%;
+    max-width: 100%;
+    width: 100%;
 }
 
 .grid a {
     text-decoration: none;
+    width: 90%;
+    max-width: 90%;
 }
 
 .projects {
@@ -174,9 +241,26 @@ strong {
     color: #B7B7B7;
     text-align: center;
     margin-top: -0.1em;
+    width: 100%;
+    max-width: 100%;
 }
 
-.projects div p:hover {
+@media screen and (max-width:550px){
+  .projects div p{
+    font-size: 80%;
+    margin-top: 1.3em; 
+  }
+
+}
+
+@media screen and (min-width:551px) and (max-width:1000px){
+  .projects div p{
+    margin-top: 0.9em; 
+    font-size: 100%;
+  }
+}
+
+.projects div p:hover{
     color: #FFF;
 }
 
@@ -190,7 +274,7 @@ strong {
 
 #Portfolio {
     max-width: 100%;
-    width: 100em;
+    width: 100%;
     height: 55em;
     background-color: #11548E;
     border-top: 3em solid #11548E;
