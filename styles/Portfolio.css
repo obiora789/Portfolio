@@ -96,8 +96,9 @@ header{
     font-size: 68%;
   }
   #home img{
-    height: 80%;
+    margin-left: -17%;
   }
+
 }
 
 @media screen and (min-width:651px) and (max-width:1000px){
@@ -108,6 +109,10 @@ header{
     font-size: 88%;
     padding: 20em 0;
   }
+    #home img{
+    margin-left: -9%;
+  }
+
 }
 
 .container div a:hover {
@@ -160,9 +165,10 @@ header{
 }
 
 #home img{
+    max-width: 70%;
     position: absolute;
-    width: 28%;
-    height: 16em;
+    width: 20em;
+    height: auto;
     border-radius: 50%;
     left: 36%;
     z-index: 3;
@@ -176,8 +182,8 @@ header{
 }
 
 #about {
-    max-width: 98%;
-    padding: 1em 2em 4em 2em;
+    max-width: 95%;
+    padding: 0 0 4% 5%;   
 }
 
 div p {
@@ -186,6 +192,11 @@ div p {
     font-size: 18px;
     color: #e5e5e5;
     line-height: 2;
+    margin-top: 2%;
+}
+
+.new{
+    padding-top: 4.2em;
 }
 .intro{
   text-align: center;
@@ -204,7 +215,7 @@ strong {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 1.1em;
-    padding: 0em 2em ;
+    padding: 0 0 0 3%;
     max-width: 100%;
     width: 100%;
 }
@@ -247,17 +258,51 @@ strong {
 
 @media screen and (max-width:550px){
   .projects div p{
-    font-size: 80%;
-    margin-top: 1.3em; 
+    font-size: 150%;
+    margin-top: 0.2em; 
+  }
+  .grid {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+    grid-gap: 1.1em;
+    padding: 0 0 0 2.5em;
+    max-width: 100%;
+    width: 100%;
+  }
+  #Portfolio{
+    padding: 0 0 28% 0;
   }
 
+  footer p{
+    font-size: 70%;
+    padding-top: .05em;
+  }
+  
 }
 
 @media screen and (min-width:551px) and (max-width:1000px){
   .projects div p{
-    margin-top: 0.9em; 
-    font-size: 100%;
+    margin-top: 0.1em; 
+    font-size: 170%;
   }
+  
+.grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 1.1em;
+    padding: 0 0 0 2.5em;
+    max-width: 100%;
+    width: 100%;
+}
+#Portfolio{
+    padding: 0 0 10% 0;
+}
+  
+  footer p{
+    font-size: 80%;
+    padding-top: .05em;
+  }
+  
 }
 
 .projects div p:hover{
@@ -275,10 +320,11 @@ strong {
 #Portfolio {
     max-width: 100%;
     width: 100%;
-    height: 55em;
+    height: 100%;
     background-color: #11548E;
     border-top: 3em solid #11548E;
     margin: 0.5em 0em 0em -0.2em;
+    padding:  0 0 6% 0;
 }
 
 #Portfolio h2 {
