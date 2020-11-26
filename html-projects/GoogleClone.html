@@ -2,61 +2,52 @@
 <html lang="en-US">
     <head>
         <meta charset = "UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" rel="stylesheet" href="../styles/googleclone.css"/>
         <title>GoogleClone.html</title>
     </head>
-    <body>
-        <header>
-            <nav>
+    <body class="col-12 col-s-12">
+        <header class="col-12 col-s-12">
+            <nav class="col-4 col-s-4">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
-                <a href="#"><img id="app-grid" src="../images/grid.png"/></a>
+                <a href="#"><img class="col-1 col-s-1" id="app-grid" src="../images/grid.png"/></a>
                 <input type="button" id="submit" title="Sign In" value="Sign In"/>
             </nav>
         </header>
         <main role="main">
-            <div class="box">
-                <button type="button" class="close">
-                  X  
-                </button>
-                <p>Come here often? Make Google your homepage</p>
-                <img class="small" src="../images/goog_logo.png"/>
-                <button type="button" class="yeske" title="Show me">Yes, show me</button>
+            <div id="google-logo" class="col-8 col-s-8">
+                <img class="col-8 col-s-8" id="googleimg" src="../images/new-google-logo.png" title="Google"/>
+                <span class="country">Nigeria</span>
             </div>
-        <div id="google-logo">
-            <img id="googleimg" src="../images/new-google-logo.png" title="Google"/>
-            <span class="country">Nigeria</span>
-        </div>
-        <form action="#" method="post">
-            <div class="search" for="inputText">
-                <label for="inputText"><img src="../images/search.svg" alt="google search"></label>
-            </div>
-            <input type="text" id="inputText" name="Search" title="Search" placeholder="Search Google or type a URL"/>
-            <div class="microphone">
-                <a href="#"> <img src="../images/microphone.svg" alt="google microphone" title="Search by voice"></a>
-            </div>
-            <input class="submit" id="searchtab" type="button" name="googleSearch" value="Google Search"/>
-            <input class="submit" id="feeltab" type="button" name="googleLucky" value="I'm Feeling Lucky"/>
-        </form>
-        <div class="languages">
+            <form action="#" method="post">
+                <label class="col-5 col-s-5" for="inputText">
+                <div class="search" class="col-5 col-s-5">
+                    <img src="../images/search.svg" alt="google search"></label>
+                </div>
+                <input type="text" class="text-search col-9 col-s-9" id="inputText" name="Search" title="Search" placeholder="Search Google or type a URL"/>
+                <label for="inputText">
+                <div class="microphone col-1 col-s-1">
+                    <a href="#"> <img class="col-1 col-s-1" src="../images/microphone.svg" alt="google microphone" title="Search by voice"></a>
+                </div></label>
+                <div class="submit">
+                    <input  id="searchtab" class="col-2 col-s-2" type="button" name="googleSearch" value="Google Search"/>
+                    <input  id="feeltab" class="col-2 col-s-2" type="button" name="googleLucky" value="I'm Feeling Lucky"/>
+                </div>
+            </form>
+        <div class="languages col-6 col-s-6">
             Google.com.ng offered in:
             <a href="#">Hausa</a>
             <a href="#">Igbo</a>
             <a href="#">èdè Yorùbá</a>
             <a href="#">Pidgin</a>     
         </div>
+            <a href="../images/Obi.png" alt="Obi's Goofy Pic">
+                <div class="customise">
+                    <a href="#"><img src="../images/customise.svg" alt="customise pen"></a> 
+                    <p id="custom">Customise</p>
+                </div>
+            </a>
         </main>
-        <footer>
-            <nav>
-                <a href="#" id="advert" class="footer-left">Advertising</a>
-                <a href="#" class="footer-left">Business</a>
-                <a href="#" class="footer-left">About</a>
-                <a href="#" class="footer-right">Privacy</a>
-                <a href="#" class="footer-right">Terms</a>
-                <a href="#" class="footer-right">Settings</a>
-                <a href="#" class="footer-right">Use Google.com</a>
-            </nav>
-        </footer>
     </body>
 </html>
