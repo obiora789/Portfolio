@@ -6,14 +6,23 @@
         <title>W3.CSS Template</title>
         <link rel="shortcut icon" href="../images/w3.jpg" type="image/jpg"/>
         <link type="text/css" rel="stylesheet" href="../styles/gourmet.css"/>
+        <script>
+            let date = new Date();
+            function writeDate(){
+                let newDate = document.getElementById("date");
+                newDate.document.write(date);   
+            }
+        </script>
     </head>
     <body>
-        <header class = "menu">
-            <div>
-                <a href="GourmetW3.html" id="nav-left">Gourmet au Catering</a>
-                <a href="#about" class="nav-right">About</a>
-                <a href="#Menu" class="nav-right">Menu</a>
-                <a href="#contact" class="nav-right">Contact</a>
+        <header class = "menu col-12 col-s-12">
+            <div class="col-12 col-s-12">
+                <a href="GourmetW3.html" class="col-3 col-s-3" id="nav-left">Gourmet au Catering</a>
+                <div class="nav-right">
+                    <a href="#about" class="about">About</a>
+                    <a href="#Menu" class="menu2">Menu</a>
+                    <div><a href="#contact" class="contact">Contact</a></div>
+                </div>
             </div>
         </header>
         <main>
@@ -25,7 +34,7 @@
                 <div class="container-img">
                     <img id="imgtoast" src="../images/tablesetting2.jpg" alt="toast.jpg"/>
                 </div>
-                <div class="container-text" >
+                <div class="container-text">
                 <p id="about">                
                     <h1>About Catering</h1>
 
@@ -70,7 +79,7 @@
             <div id="contact">
                 <p><h1 class="contact">Contact</h1>
 
-<p class="last-p">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+<p class="last-p">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste. Do not hesitate to contact us.</p>
 
 <p class="lastp">Catering Service, 42nd Living St, 43043 New York, NY</p>
 
@@ -79,7 +88,7 @@
                 <form>           
                     <p><input class="input" type="text" placeholder="Name" title="Please fill out this field"/></p>
                     <p><input class="input" type="number" min="1" max="100000" placeholder="How many people" title="Please enter a number"/></p>
-                    <p><input class="input" type="datetime" value="2017-11-16T20:00"/></p>
+                    <p><input class="input date1" id="date" type="datetime" placeholder="Click for Date" onmouseover="writeDate();"/></p>
                     <p><input class="input" type="text" placeholder="Message \ Special Requirements" title="Please fill out this field"/></p>
                     <button class="button" type = "button">SEND MESSAGE</button>                   
                 </form>
