@@ -9,8 +9,7 @@
         <script>
             let date = new Date();
             function writeDate(){
-                let newDate = document.getElementById("date");
-                newDate.document.write(date);   
+                document.getElementById("date").value = date;
             }
         </script>
     </head>
@@ -88,7 +87,7 @@
                 <form>           
                     <p><input class="input" type="text" placeholder="Name" title="Please fill out this field"/></p>
                     <p><input class="input" type="number" min="1" max="100000" placeholder="How many people" title="Please enter a number"/></p>
-                    <p><input class="input date1" id="date" type="datetime" placeholder="Click for Date" onmouseover="writeDate();"/></p>
+                    <p><input class="input date1" id="date" type="datetime" onclick="writeDate();" placeholder="Click for Date"/></p>
                     <p><input class="input" type="text" placeholder="Message \ Special Requirements" title="Please fill out this field"/></p>
                     <button class="button" type = "button">SEND MESSAGE</button>                   
                 </form>
