@@ -106,7 +106,7 @@ displayScore();
     //to get no of failed attempts
 function maxTrials(){
         output = document.getElementById("outputPnl");
-        output.innerHTML = "Game Over, Restart";
+        output.innerHTML = "<p class='div'>Game Over, Restart</p>";
         document.getElementById("restart").style.display = "block";
         document.getElementById("submit").style.display = "none";
         counter = 0;
